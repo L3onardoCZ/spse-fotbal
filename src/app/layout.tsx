@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { ThemeProvider } from "@/components/ui/theme-provider"
 import "./globals.css";
 
 const poppins = Poppins({
@@ -18,20 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Popisek stranky" />
         <meta name="keywords" content="Keywords stranky" />
       </head>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
+     
         <body className={poppins.className}>{children}</body>
-      </ThemeProvider>
+
     </html>
   );
 }
