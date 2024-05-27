@@ -47,7 +47,7 @@ const Header: React.FC = () => {
 
     return (
         <>  <div className="fixed flex justify-center w-full pb-4">
-                <div className="md:bg-[#ffffff9d] p-2 rounded-full md:mt-8">
+                <div className="md:bg-[#acacac94] p-2 rounded-full md:mt-8">
                     <Link href="/"><Button className="m-1" variant="secondary">Domů</Button></Link>
                     <Link href="/pravidla"><Button className="m-1" variant="destructive">Pravidla</Button></Link>
                 </div>
