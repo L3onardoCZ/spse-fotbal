@@ -47,23 +47,21 @@ const generateRandomImages = (count: number, isMobile: boolean): RandomImageProp
 };
 
 const Background: React.FC = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [images, setImages] = useState<RandomImageProps[]>(generateRandomImages(isMobile ? 4 : 8, isMobile));
-    
-    
+    const [isMobile, setIsMobile] = useState(false);
+    const [images, setImages] = useState<RandomImageProps[]>([]);
+
     useEffect(() => {
-        if (typeof window !== "undefined") {
         const handleResize = () => {
             const mobile = window.innerWidth <= 768;
             setIsMobile(mobile);
             setImages(generateRandomImages(mobile ? 4 : 8, mobile));
         };
 
+        handleResize(); // Ensure initial setting
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-        }
     }, []);
-    
+
     return (
         <>
             {images.map((image, index) => (
