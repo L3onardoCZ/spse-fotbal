@@ -1,10 +1,13 @@
 
 export default function InfoSection(){
     return(
-        <section className="w-full flex justify-center p-5 flex-col mb-20">
+        <section className="w-full flex justify-center p-8 flex-col mb-12 md:mb-2 md:p-36">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                GOLETO Školní Fotbalový Turnaj
+                <span className="text-blue-900">GOLETO</span> školní fotbalový turnaj <span className="text-lime-800">SPŠE</span>
             </h1>
+            <p className="leading-7">
+                který se koná 21.6.2024 od 8 hodin ráno.
+            </p>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
             Odehrávat se bude v tělocvičnách a na školních venkovních hřištích. Do turnaje se bude moci zapojit každá třída s maximálním počtem 10 hráčů v týmu + 2 náhradní hráči (náhradní hráči se účastní pouze v případě nepřítomnosti hráčů základní sestavy).
             </p>
@@ -31,7 +34,7 @@ export default function InfoSection(){
             <p className="leading-7 [&:not(:first-child)]:mb-6">
             Těšíme se na Vás a doufáme že si to společně užijeme, sportu zdar a fotbalu obzvláště. 
             </p>
-            <p className="text-xl text-muted-foreground text-center mb-6">
+            <p className="text-xl text-muted-foreground text-center mb-6 md:pt-12">
             <strong>Pravidla</strong> naleznete v záložce Pravidla.
             </p>
         </section>
