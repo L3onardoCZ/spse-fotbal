@@ -52,8 +52,8 @@ const Header: React.FC = () => {
                     <Link href="/pravidla"><Button className="m-1" variant="destructive">Pravidla</Button></Link>
                 </div>
             </div>
-            <img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" />
-            <img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" />
+            <a href="https://spseplzen.cz"><img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" /></a>
+            <a href="https://goleto.cz"><img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" /></a>
             <div className="w-full flex space-around justify-center">
             </div>
             <header className="w-full flex flex-col justify-center items-center h-52 md:h-[550px]">
