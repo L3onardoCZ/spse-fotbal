@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 export default function InfoSection(){
     return(
@@ -28,14 +29,14 @@ export default function InfoSection(){
             
             <p className="text-lg font-semibold">Losování</p>
             <p className="leading-7 [&:not(:first-child)]:mb-6">
-            Losování pavouka proběhne 20.6 o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů aby se dostavili do učebny 1101 a mohli si vylosovat soupeře pro první zápas. 
+            Losování pavouka proběhne 20.6. o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů aby se dostavili do učebny 1101 a mohli si vylosovat soupeře pro první zápas. 
             </p>
 
             <p className="leading-7 [&:not(:first-child)]:mb-6">
             Těšíme se na Vás a doufáme že si to společně užijeme, sportu zdar a fotbalu obzvláště. 
             </p>
             <p className="text-xl text-muted-foreground text-center mb-6 md:pt-12">
-            <strong>Pravidla</strong> naleznete v záložce Pravidla.
+            <strong>Pravidla</strong> naleznete v záložce <Link href="./pravidla" className="hover:text-slate-900">Pravidla</Link>.
             </p>
         </section>
     )
