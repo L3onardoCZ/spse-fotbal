@@ -28,7 +28,7 @@ export default function InfoSection(){
             
             <p className="text-lg font-semibold">Losování</p>
             <p className="leading-7 [&:not(:first-child)]:mb-6">
-            Losování pavouka proběhne 20.6 o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů aby se dostavily do učebny 1101 a mohly si vylosovat soupeře pro první zápas. 
+            Losování pavouka proběhne 20.6 o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů aby se dostavili do učebny 1101 a mohli si vylosovat soupeře pro první zápas. 
             </p>
 
             <p className="leading-7 [&:not(:first-child)]:mb-6">
