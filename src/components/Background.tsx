@@ -29,7 +29,7 @@ const getRandomStyle = (isMobile: boolean): React.CSSProperties => {
         position: 'absolute',
         width: isMobile ? '4rem' : '6rem',
         top: `${randomValue(50, 120)}%`,
-        left: `${randomValue(0, 91)}%`,
+        left: `${randomValue(0, 70)}%`,
         transform: randomRotate(),
         opacity: randomOpacity(),
     };

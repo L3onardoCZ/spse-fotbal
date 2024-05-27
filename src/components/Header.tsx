@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import "./css/header.css";
 import "./css/anton.css";
+import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 interface TimeLeft {
     days?: number;
@@ -44,9 +46,16 @@ const Header: React.FC = () => {
     const { days, hours, minutes, seconds } = timeLeft;
 
     return (
-        <>
+        <>  <div className="fixed flex justify-center w-full pb-4">
+                <div className="md:bg-[#ffffff9d] p-2 rounded-full md:mt-8">
+                    <Link href="/"><Button className="m-1" variant="secondary">Domů</Button></Link>
+                    <Link href="/pravidla"><Button className="m-1" variant="destructive">Pravidla</Button></Link>
+                </div>
+            </div>
             <img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" />
             <img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" />
+            <div className="w-full flex space-around justify-center">
+            </div>
             <header className="w-full flex flex-col justify-center items-center h-52 md:h-[550px]">
                 <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton">
                     {days !== undefined && hours !== undefined && minutes !== undefined && seconds !== undefined
