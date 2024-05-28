@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface RandomImageProps {
     src: string;
@@ -66,10 +67,20 @@ const Background: React.FC = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const { scrollY } = useScroll();
+    const y = useTransform(scrollY, [0, 1], [0, 0.5], { clamp: false });
+    
+
     return (
         <>
             {images.map((image, index) => (
-                <img key={index} className="absolute" src={image.src} style={image.style} alt="" />
+                <motion.img
+                    key={index}
+                    className="absolute"
+                    src={image.src}
+                    style={{ ...image.style, y }}
+                    alt=""
+                />
             ))}
         </>
     );
