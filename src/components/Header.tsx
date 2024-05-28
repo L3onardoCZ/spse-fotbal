@@ -5,6 +5,8 @@ import "./css/header.css";
 import "./css/anton.css";
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 interface TimeLeft {
     days?: number;
@@ -33,6 +35,9 @@ const calculateTimeLeft = (): TimeLeft => {
 };
 
 const Header: React.FC = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
     useEffect(() => {
@@ -57,7 +62,15 @@ const Header: React.FC = () => {
             <div className="w-full flex space-around justify-center">
             </div>
             <header className="w-full flex flex-col justify-center items-center h-52 md:h-[550px]">
-                <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton">
+                <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton"
+                style={{
+                    transform: isInView ? "none" : "translateX(-50px)",
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 0.5s"
+                  }}
+                  ref={ref}
+                
+                >
                     {days !== undefined && hours !== undefined && minutes !== undefined && seconds !== undefined
                         ? (
                             <>
