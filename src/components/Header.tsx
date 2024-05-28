@@ -51,22 +51,46 @@ const Header: React.FC = () => {
     const { days, hours, minutes, seconds } = timeLeft;
 
     return (
-        <>  <div className="fixed flex justify-center w-full pb-4">
-                <div className="md:bg-[#acacac94] p-2 rounded-full md:mt-8">
+        <>  
+        <div className="fixed flex justify-center w-full pb-4">
+                <div className="md:bg-[#acacac94] p-2 rounded-full md:mt-8"
+                
+                style={{
+                    transform: isInView ? "none" : "translateY(-50px)",
+                    opacity: isInView ? 1 : 0,
+                    transition: "all 0.5s"
+                  }}
+                  ref={ref}
+                >
                     <Link href="/"><Button className="m-1" variant="secondary">Domů</Button></Link>
                     <Link href="/pravidla"><Button className="m-1" variant="destructive">Pravidla</Button></Link>
                 </div>
-            </div>
-            <a href="https://spseplzen.cz"><img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" /></a>
-            <a href="https://goleto.cz"><img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" /></a>
+        </div>
+            <a href="https://spseplzen.cz"><img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" 
+            style={{
+                transform: isInView ? "none" : "translateX(50px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s"
+              }}
+              ref={ref}
+            /></a>
+            <a href="https://goleto.cz"><img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" 
+            
+            style={{
+                transform: isInView ? "none" : "translateX(-50px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s"
+              }}
+              ref={ref}
+            /></a>
             <div className="w-full flex space-around justify-center">
             </div>
             <header className="w-full flex flex-col justify-center items-center h-52 md:h-[550px]">
                 <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton"
                 style={{
-                    transform: isInView ? "none" : "translateX(-50px)",
+                    transform: isInView ? "none" : "translateY(50px)",
                     opacity: isInView ? 1 : 0,
-                    transition: "all 0.5s"
+                    transition: "all 1.5s"
                   }}
                   ref={ref}
                 
