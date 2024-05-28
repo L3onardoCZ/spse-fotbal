@@ -83,9 +83,8 @@ const Header: React.FC = () => {
               }}
               ref={ref}
             /></a>
-            <div className="w-full flex space-around justify-center">
-            </div>
-            <header className="w-full flex flex-col justify-center items-center h-52 md:h-[550px]">
+
+            <header className="w-full flex flex-col justify-center items-center h-[350px] md:h-[550px]">
                 <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton"
                 style={{
                     transform: isInView ? "none" : "translateY(50px)",
@@ -99,8 +98,8 @@ const Header: React.FC = () => {
                         ? (
                             <>
                                 <span className="text-slate-600">Za </span>
-                                <span className="text-5xl text-slate-900 md:text-8xl">{days} DNÍ <br /></span><span className="text-slate-600">a </span>
-                                <span className="text-4xl text-slate-800 md:text-6xl">{hours} HODIN.</span>
+                                <span className="text-7xl text-slate-900 md:text-8xl">{days} DNÍ <br /></span><span className="text-slate-600">a </span>
+                                <span className="text-6xl text-slate-800 md:text-6xl">{hours} HODIN.</span>
                                 
 
                             </>
