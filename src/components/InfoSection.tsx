@@ -40,15 +40,15 @@ export default function InfoSection() {
                     Každá třída může vybírat hráče pouze ze své vlastní třídy a nesmí si půjčovat z jiných tříd.
                 </p>,
                 <p key="6" className="leading-7 [&:not(:first-child)]:mb-6">
-                    Přihlásit se můžete přes třídní učitele nebo učitelky kterým jsme zaslali email s přihlašovacím formulářem, tento formulář můžete vyplnit a podat pouze do 14. 6. 2024.
+                    Přihlásit se můžete přes třídní učitele nebo učitelky, kterým jsme zaslali email s přihlašovacím formulářem, tento formulář můžete vyplnit a podat pouze do 14. 6. 2024.
                 </p>,
                 <p key="7" className="text-lg font-semibold">Jak se bude hrát?</p>,
                 <p key="8" className="leading-7 [&:not(:first-child)]:mb-6">
-                    Hrát se bude fotbalový pavouk což znamená že pokud váš tým prohraje hned první zápas tak už skončil a nikam se neposouvá takže nám opravdu budete muset dokázat co ve vás je.
+                    Hrát se bude fotbalový pavouk, což znamená, že pokud váš tým prohraje hned první zápas, tak už skončil a nikam se neposouvá, takže nám opravdu budete muset dokázat, co ve vás je.
                 </p>,
                 <p key="9" className="text-lg font-semibold">Losování</p>,
                 <p key="10" className="leading-7 [&:not(:first-child)]:mb-6">
-                    Losování pavouka proběhne 20.6. o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů aby se dostavili do učebny 1101 a mohli si vylosovat soupeře pro první zápas. 
+                    Losování pavouka proběhne 20.6. o velké přestávce v 9:45. Prosíme kapitány jednotlivých týmů, aby se dostavili do učebny 1101 a mohli si vylosovat soupeře pro první zápas. 
                 </p>,
                 <p key="11" className="leading-7 [&:not(:first-child)]:mb-6">
                     Těšíme se na Vás a doufáme že si to společně užijeme, sportu zdar a fotbalu obzvláště. 

@@ -98,8 +98,8 @@ const Header: React.FC = () => {
                         ? (
                             <>
                                 <span className="text-slate-600">Za </span>
-                                <span className="text-7xl text-slate-900 md:text-8xl">{days} DNÍ <br /></span><span className="text-slate-600">a </span>
-                                <span className="text-6xl text-slate-800 md:text-6xl">{hours} HODIN.</span>
+                                <span className="text-7xl text-slate-900 md:text-9xl">{days} DNÍ <br /></span><span className="text-slate-600">a </span>
+                                <span className="text-6xl text-slate-800 md:text-8xl">{hours} HODIN.</span>
                                 
 
                             </>
