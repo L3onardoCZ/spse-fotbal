@@ -76,8 +76,7 @@ const Header: React.FC = () => {
                 <Button variant="outline"><IoMenu className="text-xl" /></Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel>Menu</DropdownMenuLabel>
-                <DropdownMenuSeparator />
+
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
                     <Link href="/">Domů</Link>
