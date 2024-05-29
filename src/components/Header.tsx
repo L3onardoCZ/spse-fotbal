@@ -7,6 +7,18 @@ import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { IoMenu } from "react-icons/io5";
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
+
 
 interface TimeLeft {
     days?: number;
@@ -52,37 +64,36 @@ const Header: React.FC = () => {
 
     return (
         <>  
-        <div className="fixed flex justify-center w-full pb-4">
-                <div className="md:bg-[#acacac94] p-2 rounded-[13px] md:mt-8"
-                
-                style={{
-                    transform: isInView ? "none" : "translateY(-50px)",
-                    opacity: isInView ? 1 : 0,
-                    transition: "all 0.5s"
-                  }}
-                  ref={ref}
-                >
-                    <Link href="/"><Button className="m-1" variant="secondary">Domů</Button></Link>
-                    <Link href="/pravidla"><Button className="m-1" variant="destructive">Pravidla</Button></Link>
-                </div>
-        </div>
-            <a href="https://spseplzen.cz"><img className="absolute w-10 m-4 md:w-28 md:m-10 right-0" src="/spse_logo.webp" alt="SPSE Logo" 
-            style={{
-                transform: isInView ? "none" : "translateX(50px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.5s"
-              }}
-              ref={ref}
-            /></a>
-            <a href="https://goleto.cz"><img className="absolute w-16 m-4 md:w-48 md:m-10 left-0" src="/goleto_logo.svg" alt="Goleto Logo" 
-            
-            style={{
-                transform: isInView ? "none" : "translateX(-50px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.5s"
-              }}
-              ref={ref}
-            /></a>
+
+        <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-4 md:p-6">
+
+            <img className="h-12 md:h-20" src="/spse_logo.webp" alt="" />
+            <div className="flex gap-4">
+            <Link href="/" className="hidden md:inline"><Button>Domů</Button></Link>
+            <DropdownMenu>
+                <DropdownMenuTrigger asChild className="md:hidden">
+                    
+                <Button variant="outline"><IoMenu className="text-xl" /></Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                <DropdownMenuLabel>Menu</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                    <DropdownMenuItem>
+                    <Link href="/">Domů</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                    <Link href="/pravidla">Pravidla</Link>
+                    </DropdownMenuItem>
+                </DropdownMenuGroup>
+                </DropdownMenuContent>
+            </DropdownMenu>
+            <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
+            </div>
+            <img className="h-5 md:h-12 " src="/goleto_logo.svg" alt="" />
+       
+        </nav>
+        
 
             <header className="w-full flex flex-col justify-center items-center h-[350px] md:h-[550px]">
                 <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton"

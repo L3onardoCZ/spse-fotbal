@@ -7,3 +7,12 @@ header {
 
     
 }
+
+nav{
+    background: linear-gradient(to bottom, rgba(109, 109, 109, 0.736), rgba(105, 102, 102, 0.28));
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
