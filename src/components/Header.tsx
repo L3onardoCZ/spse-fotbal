@@ -83,10 +83,15 @@ const Header: React.FC = () => {
                     <DropdownMenuItem>
                     <Link href="/pravidla">Pravidla</Link>
                     </DropdownMenuItem>
+                    <DropdownMenuItem>
+                    <Link href="/live">Aktuálně</Link>
+                    </DropdownMenuItem>
+
                 </DropdownMenuGroup>
                 </DropdownMenuContent>
             </DropdownMenu>
             <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
+            <Link href="/live" className="hidden md:inline"><Button variant="secondary">Aktuálně</Button></Link>
             </div>
             <a href="https://goleto.cz"><img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" /></a>
        
