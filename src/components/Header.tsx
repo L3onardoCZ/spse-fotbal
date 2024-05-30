@@ -75,10 +75,11 @@ const Header: React.FC = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
 
-                <DropdownMenuGroup>
+                <DropdownMenuGroup className="flex justify-center flex-col items-center">
                     <DropdownMenuItem>
                     <Link href="/">Domů</Link>
                     </DropdownMenuItem>
+                    
                     <DropdownMenuItem>
                     <Link href="/pravidla">Pravidla</Link>
                     </DropdownMenuItem>
