@@ -14,8 +14,6 @@ import {
     DropdownMenuContent,
     DropdownMenuGroup,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 
@@ -65,9 +63,9 @@ const Header: React.FC = () => {
     return (
         <>  
 
-        <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-4 md:p-6">
+        <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-2 md:p-4">
 
-            <img className="h-12 md:h-20" src="/spse_logo.webp" alt="" />
+            <img className="w-12 md:w-14" src="/spse_logo.webp" alt="" />
             <div className="flex gap-4">
             <Link href="/" className="hidden md:inline"><Button>Domů</Button></Link>
             <DropdownMenu>
@@ -89,7 +87,7 @@ const Header: React.FC = () => {
             </DropdownMenu>
             <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
             </div>
-            <img className="h-5 md:h-12 " src="/goleto_logo.svg" alt="" />
+            <img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" />
        
         </nav>
         
