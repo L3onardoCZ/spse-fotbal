@@ -65,7 +65,7 @@ const Header: React.FC = () => {
 
         <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-2 md:p-4">
 
-            <img className="w-12 md:w-14" src="/spse_logo.webp" alt="" />
+            <a href="https://spseplzen.cz"><img className="w-12 md:w-14" src="/spse_logo.webp" alt="" /></a>
             <div className="flex gap-4">
             <Link href="/" className="hidden md:inline"><Button>Domů</Button></Link>
             <DropdownMenu>
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
             </DropdownMenu>
             <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
             </div>
-            <img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" />
+            <a href="https://goleto.cz"><img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" /></a>
        
         </nav>
         
