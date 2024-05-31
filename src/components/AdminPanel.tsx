@@ -1,9 +1,9 @@
-import AuthPanel from "./AuthPanel";
+import ScoreSettingPanel from "./ScoreSettingPanel";
 
 export default function AdminPanel() {
   return (
     <>
-      <AuthPanel />
+      <ScoreSettingPanel />
     </>
   )
 }
