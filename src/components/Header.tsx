@@ -62,42 +62,6 @@ const Header: React.FC = () => {
 
     return (
         <>  
-
-        <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-2 md:p-4">
-
-            <a href="https://spseplzen.cz"><img className="w-12 md:w-14" src="/spse_logo.webp" alt="" /></a>
-            <div className="flex gap-4">
-            <Link href="/" className="hidden md:inline"><Button>Domů</Button></Link>
-            <DropdownMenu>
-                <DropdownMenuTrigger asChild className="md:hidden">
-                    
-                <Button variant="outline"><IoMenu className="text-xl" /></Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-
-                <DropdownMenuGroup className="flex justify-center flex-col items-center">
-                    <DropdownMenuItem>
-                    <Link href="/">Domů</Link>
-                    </DropdownMenuItem>
-                    
-                    <DropdownMenuItem>
-                    <Link href="/pravidla">Pravidla</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                    <Link href="/live">Aktuálně</Link>
-                    </DropdownMenuItem>
-
-                </DropdownMenuGroup>
-                </DropdownMenuContent>
-            </DropdownMenu>
-            <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
-            <Link href="/live" className="hidden md:inline"><Button variant="secondary">Aktuálně</Button></Link>
-            </div>
-            <a href="https://goleto.cz"><img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" /></a>
-       
-        </nav>
-        
-
             <header className="w-full flex flex-col justify-center items-center h-[350px] md:h-[550px]">
                 <h1 className="text-3xl md:text-5xl font-bold mt-4 text-center anton"
                 style={{
