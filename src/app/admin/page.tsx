@@ -6,12 +6,12 @@ import AuthPanel from "@/components/AuthPanel";
 
 export default function Admin() {
 
-  const loggedIn = true;
+  const loggedIn = false;
 
   return (
     <>
       <Navbar />
-      {loggedIn ? <AdminPanel /> : <AuthPanel />}
+      { loggedIn ? <AdminPanel /> : <AuthPanel />}
       <Footer />
       <Background />
     </>
