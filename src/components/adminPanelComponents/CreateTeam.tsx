@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label"
 
 export default function CreateTeam(){
     return(
-        <Card className="w-[350px]">
+        <Card>
       <CardHeader>
         <CardTitle>Vytvořit tým</CardTitle>
         <CardDescription>Vytvoř tým za svou třídu. Nevytvářej další, pokud-li jsi již jeden vytvořil.</CardDescription>

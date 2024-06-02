@@ -15,7 +15,7 @@ export default function AdminPanel() {
           <div className="w-full flex justify-center px-4 flex-col md:flex-row gap-4">
             <LoadTeam />
           </div>
-          <div className="w-full flex justify-center px-4 pt-4 flex-col md:flex-row gap-4">
+          <div className="w-full flex justify-center px-4 pt-4 flex-col md:flex-row gap-4 pb-24">
             <LoadAllTeams />
           </div>
         </div>
