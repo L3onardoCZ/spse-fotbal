@@ -6,7 +6,7 @@ import AuthPanel from "@/components/AuthPanel";
 
 export default function Admin() {
 
-  const loggedIn = false;
+  const loggedIn = true;
 
   return (
     <>
