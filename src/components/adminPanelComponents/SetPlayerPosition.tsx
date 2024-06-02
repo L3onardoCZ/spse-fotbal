@@ -11,31 +11,32 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 
-
-export default function CreateTeam(){
+export default function SetPlayerPosition(){
     return(
-        <Card className="flex-1">
+        <>
+            <Card className="flex-1">
       <CardHeader>
-        <CardTitle>Vytvořit tým</CardTitle>
-        <CardDescription>Vytvoř tým za svou třídu. Nevytvářej další, pokud-li jsi již jeden vytvořil.</CardDescription>
+        <CardTitle>Nastavit pozici hráče</CardTitle>
+        <CardDescription>Nastav pozici hráčů ve svém týmu</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="2.I" />
+          <div className="flex flex-col space-y-1.5">
+              <Label htmlFor="player_id">ID Hráče</Label>
+              <Input id="player_id" placeholder="XXXXXX" />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="room">Třída</Label>
-              <Input id="room" placeholder="2207" />
+              <Label htmlFor="position">Pozice</Label>
+              <Input id="position" placeholder="X" />
             </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button>Vytvořit</Button>
+        <Button>Nastavit</Button>
       </CardFooter>
     </Card>
+        </>
     )
 }

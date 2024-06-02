@@ -2,6 +2,7 @@ import CreateTeam from "./adminPanelComponents/CreateTeam";
 import CreatePlayer from "./adminPanelComponents/CreatePlayer";
 import LoadTeam from "./adminPanelComponents/LoadTeam";
 import LoadAllTeams from "./adminPanelComponents/LoadAllTeams";
+import SetPlayerPosition from "./adminPanelComponents/SetPlayerPosition";
 
 export default function AdminPanel() {
   return (
@@ -11,6 +12,7 @@ export default function AdminPanel() {
           <div className="w-full flex justify-center p-4 pt-28 md:pt-40 flex-col md:flex-row gap-4">
             <CreateTeam />
             <CreatePlayer />
+            <SetPlayerPosition />
           </div>
           <div className="w-full flex justify-center px-4 flex-col md:flex-row gap-4">
             <LoadTeam />

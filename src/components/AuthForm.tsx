@@ -1,4 +1,3 @@
-import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 import { Button } from "@/components/ui/button"
 import {
@@ -26,7 +25,6 @@ export default function AuthForm() {
   return (
     <>
     <div className="md:max-w-[500px]">
-      {/* {p.login ? <LoginForm /> : <RegisterForm />} */}
       <Tabs defaultValue="login">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="login">Přihlásit
@@ -70,12 +68,12 @@ export default function AuthForm() {
           </CardHeader>
           <CardContent className="space-y-2">
             <div className="space-y-1">
-              <Label htmlFor="name">Jméno</Label>
-              <Input id="name" placeholder="Prokop"/>
+              <Label htmlFor="first_name">Jméno</Label>
+              <Input id="first_name" placeholder="Prokop"/>
             </div>
             <div className="space-y-1">
-              <Label htmlFor="surname">Příjmení</Label>
-              <Input id="surname" placeholder="Dveře"/>
+              <Label htmlFor="last_name">Příjmení</Label>
+              <Input id="last_name" placeholder="Dveře"/>
             </div>
             <div className="space-y-1">
               <Label htmlFor="password">Heslo</Label>

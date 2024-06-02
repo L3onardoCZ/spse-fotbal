@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label"
 
 export default function CreatePlayer(){
     return(
-    <Card className="flex-1">
+    <Card>
       <CardHeader>
         <CardTitle>Přidat hráče</CardTitle>
         <CardDescription>Přidej jako administrátor hráče do svého týmu</CardDescription>
