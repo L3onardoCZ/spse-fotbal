@@ -24,7 +24,7 @@ export default function LoadAllTeams() {
         </CardHeader>
         {isClicked ? <div className="px-4"><AllTeamsTable /></div> : null}
         <CardFooter className="flex justify-between">
-          <Button onClick={() => setIsClicked(true)}>Načti</Button>
+          <Button onClick={() => setIsClicked(true)}>Načíst</Button>
         </CardFooter>
       </Card>
     </>

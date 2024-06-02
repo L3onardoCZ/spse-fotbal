@@ -29,7 +29,7 @@ export default function LoadTeam(){
                 </form>
             </CardContent>
             <CardFooter className="flex justify-between">
-                <Button>Vytvořit</Button>
+                <Button>Získat</Button>
             </CardFooter>
             </Card>
         </>
