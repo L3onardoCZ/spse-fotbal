@@ -32,41 +32,7 @@ import {
 } from "@/components/ui/table"
 
 const data: Team[] = [
-  {
-    id: "1",
-    teamName: "Team A",
-    playerCount: 11,
-    wins: 10,
-    losses: 2,
-  },
-  {
-    id: "2",
-    teamName: "Team B",
-    playerCount: 12,
-    wins: 8,
-    losses: 4,
-  },
-  {
-    id: "3",
-    teamName: "Team C",
-    playerCount: 13,
-    wins: 6,
-    losses: 6,
-  },
-  {
-    id: "4",
-    teamName: "Team D",
-    playerCount: 10,
-    wins: 9,
-    losses: 3,
-  },
-  {
-    id: "5",
-    teamName: "Team E",
-    playerCount: 14,
-    wins: 7,
-    losses: 5,
-  },
+
 ]
 
 export type Team = {
@@ -79,38 +45,24 @@ export type Team = {
 
 export const columns: ColumnDef<Team>[] = [
   {
-    accessorKey: "teamName",
-    header: "Název Týmu",
+    accessorKey: "teamName1",
+    header: "Tým 1",
     cell: ({ row }) => (
-      <div className="capitalize">{row.getValue("teamName")}</div>
+      <div className="capitalize">{row.getValue("teamName1")}</div>
     ),
   },
   {
-    accessorKey: "playerCount",
-    header: "Počet Hráčů",
+    accessorKey: "teamName2",
+    header: "Tým 2",
     cell: ({ row }) => (
-      <div>{row.getValue("playerCount")}</div>
+      <div className="capitalize">{row.getValue("teamName2")}</div>
     ),
   },
   {
-    accessorKey: "id",
-    header: "ID Týmu",
+    accessorKey: "match_id",
+    header: "ID Utkání",
     cell: ({ row }) => (
-      <div>{row.getValue("id")}</div>
-    ),
-  },
-  {
-    accessorKey: "wins",
-    header: "Počet Výher",
-    cell: ({ row }) => (
-      <div>{row.getValue("wins")}</div>
-    ),
-  },
-  {
-    accessorKey: "losses",
-    header: "Počet Proher",
-    cell: ({ row }) => (
-      <div>{row.getValue("losses")}</div>
+      <div className="capitalize">{row.getValue("match_id")}</div>
     ),
   },
 ]
