@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Popisek stranky" />
+        <meta name="description" content="Oficiální stránka pro školní fotbalový turnaj SPŠE 2024" />
         <meta name="keywords" content="Keywords stranky" />
       </head>
      
