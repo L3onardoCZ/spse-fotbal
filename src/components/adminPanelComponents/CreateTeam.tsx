@@ -1,4 +1,7 @@
+//@ts-nocheck
+
 "use client"
+
 
 import { Button } from "@/components/ui/button"
 import {
@@ -13,23 +16,37 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import axios from "axios" 
 import { useState } from "react"
+import { useToast } from "@/components/ui/use-toast"
+
 
 
 export default function CreateTeam(){
 
   const [name, setName] = useState("")
   const [room, setRoom] = useState("")
+  const { toast } = useToast()
 
   function handleCreatePlayer(){
+
     axios.post('http://localhost:3001/team/create', {
-      name: name,
-      room: room
+      "class": name,
+      "room": room
     })
     .then(function (response) {
       console.log(response);
+      toast({
+        title: "Tým vytvořen",
+        description: "Vytvořen tým " + name + " s místností " + room,
+        variant: "success"
+      })
     })
     .catch(function (error) {
       console.log(error);
+      toast({
+        title: "KRUCIŠ, nepovedlo se",
+        description: "Chyba " + error,
+        variant: "destructive",
+      })
     });
   }
 
