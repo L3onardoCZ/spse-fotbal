@@ -1,5 +1,3 @@
-//@ts-nocheck
-
 "use client"
 
 
@@ -26,7 +24,7 @@ export default function CreateTeam(){
   const [room, setRoom] = useState("")
   const { toast } = useToast()
 
-  function handleCreatePlayer(){
+  function handleCreateTeam(){
 
     axios.post('http://localhost:3001/team/create', {
       "class": name,
@@ -71,7 +69,7 @@ export default function CreateTeam(){
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button onClick={handleCreatePlayer}>Vytvořit</Button>
+        <Button onClick={handleCreateTeam}>Vytvořit</Button>
       </CardFooter>
     </Card>
     )
