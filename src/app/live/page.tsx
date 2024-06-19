@@ -1,4 +1,4 @@
-import Header from "@/components/Header"
+import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Bracket from "@/components/Bracket"
 
@@ -6,8 +6,9 @@ import Bracket from "@/components/Bracket"
 export default function Live(){
     return(
         <> 
-
+            <Navbar />
             <Bracket />
+            <Footer />
 
         </>
     )
