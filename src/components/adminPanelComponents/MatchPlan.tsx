@@ -22,15 +22,18 @@ export default function MatchPlan(){
     const [team1, setTeam1] = useState("")
     const [team2, setTeam2] = useState("")
     const [startTime, setStartTime] = useState("")
+    const date = '2024-07-21';
+    const startDateTime = `${date} ${startTime}:00`;
 
-    function handleMatchPlan(){
+    function 
+    handleMatchPlan(){
 
         const url = 'http://localhost:3001/match/plan'
     
         axios.post(url , {
           "team1": team1,
           "team2": team2,
-          "start": startTime
+          "start": startDateTime
         })
         .then(function (response) {
           console.log(response);
