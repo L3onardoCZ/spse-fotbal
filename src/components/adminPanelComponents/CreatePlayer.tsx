@@ -27,10 +27,6 @@ export default function CreatePlayer(){
 
   function handleCreatePlayer(){
 
-    const player = {
-      "first_name": name,
-      "last_name": surname
-    }
     const url = 'http://localhost:3001/team/'+ teamId +'/add-player'
 
     axios.post(url , {
