@@ -31,10 +31,13 @@ export default function CreatePlayer(){
       "first_name": name,
       "last_name": surname
     }
+    const url = 'http://localhost:3001/team/'+ teamId +'/add-player'
 
-    axios.post('http://localhost:3001/${team_id}/add-player', {
-      "team_id": teamId,
-      "player": player
+    axios.post(url , {
+      "first_name": name,
+      "last_name": surname,
+      "bench": 0,
+      "position": 1
     })
     .then(function (response) {
       console.log(response);
