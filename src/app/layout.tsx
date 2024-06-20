@@ -28,7 +28,7 @@ export default function RootLayout({
         <meta property="og:description" content="Oficiální stránka pro školní fotbalový turnaj odehrávájící se 21. června 2024" />
         <meta property="og:image" content="./plakat.jpg" />
         <link rel="icon" type="image/x-icon" href="/public/trophy.png" />
-
+        <meta name="theme-color" content="#252830" />
       </head>
      
         <body className={poppins.className}>
