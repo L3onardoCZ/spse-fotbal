@@ -9,7 +9,7 @@ export default function CourtContent(){
                 src="/rozpis_hrist.png"
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt="Rozpis Hřišť"
             />
             </div>
         
