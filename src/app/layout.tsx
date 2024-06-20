@@ -31,7 +31,10 @@ export default function RootLayout({
         <meta property="og:image" content="https://media.discordapp.net/attachments/1017145792315805800/1244332439128510464/A3plakat_SPSE-02.jpg?ex=66750724&is=6673b5a4&hm=d9a4319ef43a3245291c686ee50ed98f5c345969a1ac503a2dedf8ef9a7760ac&=&width=1506&height=1064" />
         <meta property="og:image:width" content="1506" />
         <meta property="og:image:height" content="1064" />
-        <link rel="icon" type="image/x-icon" href="/trophy.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         <meta name="theme-color" content="#252830" />
       </head>
