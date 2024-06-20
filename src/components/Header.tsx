@@ -26,7 +26,7 @@ interface TimeLeft {
 }
 
 const calculateTimeLeft = (): TimeLeft => {
-    const targetDate = new Date('June 21, 2024 08:00:00');
+    const targetDate = new Date('June 21, 2024 08:15:00');
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
     
@@ -76,8 +76,9 @@ const Header: React.FC = () => {
                         ? (
                             <>
                                 <span className="text-slate-600">Za </span>
-                                <span className="text-7xl text-slate-900 md:text-9xl">{days} DNÍ <br /></span><span className="text-slate-600">a </span>
-                                <span className="text-6xl text-slate-800 md:text-8xl">{hours} HODIN.</span>
+                                <span className="text-7xl text-slate-900 md:text-9xl">{hours} HODIN <br /></span><span className="text-slate-600">a </span>
+                                <span className="text-6xl text-slate-800 md:text-8xl">{minutes} MINUT</span><br /><span className="text-slate-600">a </span>
+                                <span className="text-4xl text-slate-800 md:text-6xl">{seconds} SEKUND</span>
                                 
 
                             </>
