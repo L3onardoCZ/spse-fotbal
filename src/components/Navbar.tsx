@@ -25,7 +25,7 @@ export default function Navbar(){
             <nav className="w-full flex fixed flex-row justify-between h-auto items-center p-2 md:p-4">
                 <a href="https://spseplzen.cz"><img className="w-12 md:w-14" src="/spse_logo.webp" alt="" /></a>
                 <div className="flex gap-4">
-                <Link href="/" className="hidden md:inline"><Button><FaHome className="mr-2"/>Domů</Button></Link>
+                <Link href="/" className="hidden md:inline"><Button><FaHome className="mr-2 text-lg"/>Domů</Button></Link>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild className="md:hidden">
                         
@@ -52,9 +52,9 @@ export default function Navbar(){
                     </DropdownMenuGroup>
                     </DropdownMenuContent>
                 </DropdownMenu>
-                <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary"><FiBook className="mr-2"/>Pravidla</Button></Link>
-                <Link href="/live" className="hidden md:inline"><Button variant="secondary"><IoIosGitBranch className="mr-2"/>Rozpis zápasů</Button></Link>
-                <Link href="/rozpisHrist" className="hidden md:inline"><Button variant="secondary"><PiCourtBasketballDuotone className="mr-2"/>Rozpis hřišť</Button></Link>
+                <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary"><FiBook className="mr-2 text-xl"/>Pravidla</Button></Link>
+                <Link href="/live" className="hidden md:inline"><Button variant="secondary"><IoIosGitBranch className="mr-2 text-xl"/>Rozpis zápasů</Button></Link>
+                <Link href="/rozpisHrist" className="hidden md:inline"><Button variant="secondary"><PiCourtBasketballDuotone className="mr-2 text-xl"/>Rozpis hřišť</Button></Link>
 
                 </div>
                 <a href="https://goleto.cz"><img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" /></a>
