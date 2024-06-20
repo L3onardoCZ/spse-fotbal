@@ -7,6 +7,7 @@ import Background from "@/components/Background"
 export default function rozpisHrist(){
     return(
         <>
+        <title>Turnaj | Rozpis Hřišť</title>
         <Navbar />
         <Header />
         <CourtContent />

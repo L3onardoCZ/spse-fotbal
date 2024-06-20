@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar"
 export default function Pravidla(){
     return(
         <>
+            <title>Turnaj | Pravidla</title>
             <Navbar />
             <Header />
             <Rules />
