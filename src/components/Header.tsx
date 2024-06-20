@@ -82,7 +82,7 @@ const Header: React.FC = () => {
 
                             </>
                         )
-                        : "Hrajeme!"}
+                        : <span className="text-7xl text-slate-900 md:text-9xl">TURNA PROBÍHÁ!</span>}
                 </h1>
             </header>
         </>
