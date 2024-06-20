@@ -38,7 +38,7 @@ export default function Navbar(){
                         <Link href="/pravidla">Pravidla</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                        <Link href="/live">Aktuálně</Link>
+                        <Link href="/live">Rozpis Zápasů</Link>
                         </DropdownMenuItem>
 
 
