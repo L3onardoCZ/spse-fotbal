@@ -40,6 +40,9 @@ export default function Navbar(){
                         <DropdownMenuItem>
                         <Link href="/live">Rozpis zápasů</Link>
                         </DropdownMenuItem>
+                        <DropdownMenuItem>
+                        <Link href="/rozpisHrist">Rozpis hřišť</Link>
+                        </DropdownMenuItem>
 
 
                     </DropdownMenuGroup>
@@ -47,6 +50,7 @@ export default function Navbar(){
                 </DropdownMenu>
                 <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary">Pravidla</Button></Link>
                 <Link href="/live" className="hidden md:inline"><Button variant="secondary">Rozpis zápasů</Button></Link>
+                <Link href="/rozpisHrist" className="hidden md:inline"><Button variant="secondary">Rozpis hřišť</Button></Link>
 
                 </div>
                 <a href="https://goleto.cz"><img className="w-12 md:w-14" src="/goleto_logo.svg" alt="" /></a>
