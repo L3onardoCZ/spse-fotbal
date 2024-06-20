@@ -5,7 +5,8 @@ import "./css/anton.css";
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import { IoMenu } from "react-icons/io5";
-import { FaHome, FaBook } from "react-icons/fa"
+import { FaHome } from "react-icons/fa"
+import { FiBook } from "react-icons/fi"
 import { IoIosGitBranch } from "react-icons/io"
 import { PiCourtBasketballDuotone } from "react-icons/pi"
 
@@ -38,7 +39,7 @@ export default function Navbar(){
                         </DropdownMenuItem>
                         
                         <DropdownMenuItem>
-                        <FaBook className="mr-2 text-xs"/><Link href="/pravidla">Pravidla</Link>
+                        <FiBook className="mr-2 text-xs"/><Link href="/pravidla">Pravidla</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                         <IoIosGitBranch className="mr-2 text-xs"/><Link href="/live">Rozpis zápasů</Link>
@@ -51,7 +52,7 @@ export default function Navbar(){
                     </DropdownMenuGroup>
                     </DropdownMenuContent>
                 </DropdownMenu>
-                <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary"><FaBook className="mr-2"/>Pravidla</Button></Link>
+                <Link href="/pravidla" className="hidden md:inline"><Button variant="secondary"><FiBook className="mr-2"/>Pravidla</Button></Link>
                 <Link href="/live" className="hidden md:inline"><Button variant="secondary"><IoIosGitBranch className="mr-2"/>Rozpis zápasů</Button></Link>
                 <Link href="/rozpisHrist" className="hidden md:inline"><Button variant="secondary"><PiCourtBasketballDuotone className="mr-2"/>Rozpis hřišť</Button></Link>
 
