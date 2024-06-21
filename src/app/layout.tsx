@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="cs" suppressHydrationWarning={true}>
       <head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Prestižní programátoři ze 2.I"/>
