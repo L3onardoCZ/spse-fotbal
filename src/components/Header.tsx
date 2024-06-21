@@ -82,7 +82,7 @@ const Header: React.FC = () => {
 
                             </>
                         )
-                        : <span className="text-7xl text-slate-900 md:text-9xl">TURNAJ PROBÍHÁ!</span>}
+                        : <span className="text-7xl text-slate-900 md:text-9xl">TURNAJ SKONČIL</span>}
                 </h1>
             </header>
         </>
