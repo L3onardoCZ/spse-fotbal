@@ -76,7 +76,6 @@ const Header: React.FC = () => {
                         ? (
                             <>
                                 <span className="text-slate-600">Za </span>
-                                <span className="text-7xl text-slate-900 md:text-9xl">{hours} HODIN <br /></span>
                                 <span className="text-6xl text-slate-800 md:text-8xl">{minutes} MINUT</span><br /><span className="text-slate-600">a </span>
                                 <span className="text-4xl text-slate-700 md:text-6xl">{seconds} SEKUND</span><span className="text-slate-600">. </span>
                                 
